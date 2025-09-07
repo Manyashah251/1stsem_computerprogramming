@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int i, n, sum = 0;
+
+    // Input value of n
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    // Calculate sum of first n even numbers
+    for(i = 2; i <= 2 * n; i = i + 2) {
+        sum = sum + i;
+    }
+
+    // Output result
+    printf("Sum of first %d even numbers = %d\n", n, sum);
+
+    return 0;
+}

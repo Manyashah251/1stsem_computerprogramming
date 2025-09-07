@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int i, n, sum = 0;
+
+    // Input value of n
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    // Calculate sum of first n odd numbers
+    for(i = 1; i <= (2 * n - 1); i = i + 2) {
+        sum = sum + i;
+    }
+
+    // Output result
+    printf("Sum of first %d odd numbers = %d\n", n, sum);
+
+    return 0;
+}
